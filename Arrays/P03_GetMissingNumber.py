@@ -5,10 +5,8 @@ from Arrays import Array
 def findMissing(myArray, n):
     n = n - 1
     totalSum = (n * (n + 1)) // 2
-    for i in range(0, n):
-        totalSum -= myArray[i]
-
-    return totalSum
+    Sum_of_myArray = sum(myArray)
+    return totalSum - Sum_of_myArray
 
 if __name__ == '__main__':
     myArray = Array(10)
